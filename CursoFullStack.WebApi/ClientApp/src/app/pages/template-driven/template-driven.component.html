@@ -1,0 +1,66 @@
+<div class="grid formgrid p-fluid">
+  <div class="col-12">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <div class="col-12">
+        <div class="card">
+          <h2>Formulário Template Driven</h2>
+          <p-divider></p-divider>
+          <div class="grid mt-5">
+            <div class="field col-12 md:col-6">
+              <label htmlFor="firstname2">Firstname</label>
+              <input
+                pInputText
+                id="firstname"
+                name="firstName"
+                type="text"
+                [(ngModel)]="firstName"
+              />
+            </div>
+            <div class="field col-12 md:col-6">
+              <label htmlFor="lastName2">LastName</label>
+              <input
+                pInputText
+                id="lastname"
+                name="lastName"
+                type="text"
+                [(ngModel)]="lastName"
+              />
+            </div>
+            <div class="field col-12 md:col-6">
+              <label htmlFor="city">City</label>
+              <input
+                pInputText
+                id="city"
+                name="city"
+                type="text"
+                [(ngModel)]="city"
+              />
+            </div>
+            <div class="field col-12 md:col-6">
+              <label htmlFor="zip">Zip</label>
+              <input
+                pInputText
+                id="zip"
+                name="zip"
+                type="text"
+                [(ngModel)]="zip"
+              />
+            </div>
+          </div>
+        </div>
+
+        <p-divider></p-divider>
+      </div>
+      <div class="flex justify-content-end flex-wrap">
+        <button
+          pButton
+          pRipple
+          type="submit"
+          class="w-auto"
+          label="Submit"
+          icon="pi pi-check"
+        ></button>
+      </div>
+    </form>
+  </div>
+</div>

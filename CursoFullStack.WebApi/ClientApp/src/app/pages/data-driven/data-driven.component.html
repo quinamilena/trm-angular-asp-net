@@ -1,0 +1,70 @@
+<div class="grid formgrid p-fluid">
+  <div class="col-12">
+    <form [formGroup]="form">
+      <div class="col-12">
+        <div class="card">
+          <h2>Formulário Data Driven</h2>
+          <p-divider></p-divider>
+          <div class="grid mt-5">
+            <div class="field col-12 md:col-6">
+              <label htmlFor="firstName2">FirstName</label>
+              <input
+                pInputText
+                id="firstname"
+                name="firstName"
+                type="text"
+                formControlName="firstName"
+                required
+              />
+            </div>
+            <div class="field col-12 md:col-6">
+              <label htmlFor="lastName2">LastName</label>
+              <input
+                pInputText
+                id="lastname"
+                name="lastName"
+                type="text"
+                formControlName="lastName"
+                required
+              />
+            </div>
+            <div class="field col-12 md:col-6">
+              <label htmlFor="city">City</label>
+              <input
+                pInputText
+                id="city"
+                name="city"
+                type="text"
+                formControlName="city"
+                required
+              />
+            </div>
+            <div class="field col-12 md:col-6">
+              <label htmlFor="zip">Zip</label>
+              <input
+                pInputText
+                id="zip"
+                name="zip"
+                type="text"
+                formControlName="zip"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <p-divider></p-divider>
+      </div>
+      <div class="flex justify-content-end flex-wrap">
+        <button
+          pButton
+          pRipple
+          (click)="onSubmit()"
+          class="w-auto"
+          label="Submit"
+          icon="pi pi-check"
+        ></button>
+      </div>
+    </form>
+  </div>
+</div>
